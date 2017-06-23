@@ -1,0 +1,236 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\BindFile.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\BindFile.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 179, 73
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于文件捆绑器"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,8,6,20,20
+    LTEXT           "文件捆绑器 1.0 版",IDC_STATIC,50,7,79,8,SS_NOPREFIX
+    LTEXT           "版权所有(C) 2001 未来工作室",IDC_STATIC,28,37,124,8
+    DEFPUSHBUTTON   "确定",IDOK,70,53,41,14,WS_GROUP
+    LTEXT           "作者：徐景周",IDC_STATIC,58,22,63,8,SS_NOPREFIX
+END
+
+IDD_BINDFILE_DIALOG DIALOGEX 0, 0, 173, 169
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "文件捆绑器"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "捆绑",IDC_BUTTON_BINDFILE,13,148,41,14
+    PUSHBUTTON      "退出",IDCANCEL,119,148,41,14
+    PUSHBUTTON      "浏览",IDC_FIRSTBROWSE,143,18,21,11,BS_CENTER | 
+                    BS_VCENTER,WS_EX_RIGHT
+    EDITTEXT        IDC_FIRSTPATH,9,18,134,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "浏览",IDC_FINALBROWSE,144,73,21,11
+    EDITTEXT        IDC_FINALPATH,10,73,134,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "请选择要绑定的第一个文件:",IDC_STATIC,9,8,125,8
+    LTEXT           "请选择捆绑后生成的目标文件:",IDC_STATIC,10,63,131,8
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",PBS_SMOOTH,
+                    74,122,92,12
+    CTEXT           "",IDC_PARTS,10,123,61,10,SS_SUNKEN
+    PUSHBUTTON      "关于",IDC_BUTTON_ABOUT,66,148,41,14
+    PUSHBUTTON      "浏览",IDC_SECONDBROWSE,144,45,21,11,BS_CENTER | 
+                    BS_VCENTER,WS_EX_RIGHT
+    EDITTEXT        IDC_SECONDPATH,10,45,134,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "请选择要绑定的第二个文件:",IDC_STATIC,10,35,123,8
+    GROUPBOX        "最终文件执行方式",IDC_STATIC,10,91,156,25
+    CONTROL         "同步执行",IDC_RADIO_SYNC,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,22,102,51,10
+    CONTROL         "异步执行",IDC_RADIO_ASYNC,"Button",BS_AUTORADIOBUTTON,
+                    97,102,54,10
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x29L
+#else
+ FILEFLAGS 0x28L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "可用来将二个不同的可执行文件合并成一个文件，运行合并后的文件等同于同时运行合并前的二个文件。 徐景周(jingzhou_xu@163.net)\0"
+            VALUE "CompanyName", "未来工作室(Future Studio)\0"
+            VALUE "FileDescription", "可用来将二个不同的可执行文件合并成一个文件。\0"
+            VALUE "FileVersion", "1, 0, 0, 0\0"
+            VALUE "InternalName", "文件捆绑器\0"
+            VALUE "LegalCopyright", "版权所有(C) 2001 未来工作室\0"
+            VALUE "LegalTrademarks", "免费软件，谢谢使用!\0"
+            VALUE "OriginalFilename", "BindFile.EXE\0"
+            VALUE "PrivateBuild", "作者：徐景周\0"
+            VALUE "ProductName", "文件捆绑器\0"
+            VALUE "ProductVersion", "1, 0, 0, 0\0"
+            VALUE "SpecialBuild", "作者：徐景周\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 172
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 66
+    END
+
+    IDD_BINDFILE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 166
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 162
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "RES\\ButtonsWin3000.bmp"
+IDB_BITMAP2             BITMAP  DISCARDABLE     "RES\\Button1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于文件捆绑器(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\BindFile.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
